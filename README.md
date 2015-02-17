@@ -1,3 +1,5 @@
+:warning: *Use of this software is subject to important terms and conditions as set forth in the License file* :warning:
+
 # To Do List App
 
 An app that serves as a basic to do list. Items are stored in a custom field created using requirements when the app is installed.
