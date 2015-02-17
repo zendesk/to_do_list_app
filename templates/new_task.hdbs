@@ -1,0 +1,25 @@
+<div id="new_task_pane">
+	<h4>New Task</h4>
+	<div id="task_options">
+	<ul class="just_list">
+		<li>
+			<input type="hidden" id="new_task_id"/>
+		</li>
+		<li>
+			<label>Title: <input type="text" id="new_task_title" /></label>
+		</li>
+		<li>
+			<label>Description: <input type="text" id="new_task_description" /></label>
+		</li>
+		<li>
+			<label> Notes: </label>
+			<textarea id="new_task_notes"></textarea>
+		</li>
+		<li>
+			<label>Due Date: </label>
+			<input type="text" id="new_task_due_date"/>
+			<button id="submit_new_task">Submit</button>
+		</li>
+	</ul>
+	</div>
+</div>

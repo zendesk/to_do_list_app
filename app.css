@@ -1,0 +1,121 @@
+
+h3.app_title {
+	text-align: center;
+	text-decoration: line-through;
+}
+
+
+div#task_pane {
+	background: #fdfffd;
+}
+
+ul#task_list {
+	list-style-type: none;
+	text-indent: none;
+	list-style-position: outside;
+	width: 100%;
+	margin-left: 0;
+}
+
+ul#task_list li {
+	position: relative;
+}
+
+ul li {
+	border-bottom: 1px dotted black;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+
+#options_bar {
+	background: #efefef;
+	min-height: 25px;
+	margin-bottom: 5px;
+}
+
+button {
+	background: #85C9ED;
+	border: 1px outset #dedede;
+}
+
+#edit_settings {
+	float: left;
+	height: 25px;
+}
+
+#add_task {
+	float:right;
+	height: 25px;
+}
+
+span.clearfix {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	clear:both;
+}
+span.notes {
+	display: block;
+	font-size: 90%;
+	font-style: italic;
+}
+
+button.note_btn {
+	display: block;
+	border: none;
+	font-size: 75%;
+	color: #fff;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+#task_options label {
+	display: inline;
+}
+
+#task_options ul li {
+	border: none;
+	margin-top: 10px;
+}
+
+#task_options input, #task_options textarea  {
+	width: 95%;
+}
+
+ul.just_list {
+	margin: 0;
+	padding-right: 10px;
+}
+
+input#new_task_due_date {
+	width: 40%;
+	margin: 0;
+	display: block;
+}
+
+
+#submit_new_task {
+	float: right;
+	margin-top: -28px;
+}
+
+.delete_btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
