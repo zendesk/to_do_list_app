@@ -1,6 +1,6 @@
 # To Do List App
 
-[An app that serves as a basic to do list. Items are stored in a custom field created using requirements when the app is installed.]
+An app that serves as a basic to do list. Items are stored in a custom field created using requirements when the app is installed.
 
 ### App Has basic features:
 
