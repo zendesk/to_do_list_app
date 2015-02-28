@@ -19,6 +19,7 @@
 			<label>Due Date: </label>
 			<input type="text" id="new_task_due_date"/>
 			<button id="submit_new_task">Submit</button>
+			<a id="cancel_new_task">Cancel</a>
 		</li>
 	</ul>
 	</div>

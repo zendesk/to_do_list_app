@@ -1,12 +1,12 @@
 
 h3.app_title {
 	text-align: center;
-	text-decoration: line-through;
 }
 
 
 div#task_pane {
 	background: #fdfffd;
+	padding-top: 10px;
 }
 
 ul#task_list {
@@ -15,15 +15,19 @@ ul#task_list {
 	list-style-position: outside;
 	width: 100%;
 	margin-left: 0;
+	/*margin-bottom: 15px;*/
 }
 
 ul#task_list li {
 	position: relative;
 }
 
-ul li {
+ul li:not(:last-child){
 	border-bottom: 1px dotted black;
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
+}
+
+ul li{
 	padding-bottom: 5px;
 }
 
@@ -77,6 +81,10 @@ button.note_btn {
 	margin-top: 10px;
 }
 
+#new_task_pane {
+	margin-bottom: 15px;
+}
+
 #task_options input, #task_options textarea  {
 	width: 95%;
 }
@@ -87,7 +95,7 @@ ul.just_list {
 }
 
 input#new_task_due_date {
-	width: 40%;
+	width: 60%;
 	margin: 0;
 	display: block;
 }
@@ -95,7 +103,14 @@ input#new_task_due_date {
 
 #submit_new_task {
 	float: right;
-	margin-top: -28px;
+	margin-top: -26px;
+	margin-right: 5px;
+}
+
+#cancel_new_task {
+	float: right;
+	margin-top: -24px;
+	margin-right: 66px;
 }
 
 .delete_btn {
@@ -103,6 +118,14 @@ input#new_task_due_date {
 	top: 0;
 	right: 0;
 }
+
+footer{
+	border-left: none !important;
+	border-top: 1px dotted #CCC;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
 
 
 

@@ -32,6 +32,7 @@
 			'click .note_btn': 'toggleNotes',
 			'click #add_task': 'loadNewTask',
 			'click #submit_new_task': 'collectTaskData',
+			'click #cancel_new_task': 'loadAppView',
 			'click .delete_btn': 'deleteTask'
 		},
 
@@ -43,6 +44,8 @@
 			var user_id = this.currentUser().id();
 			this.ajax('getFieldData', user_id)
 			.done(function(data){
+				var app_name = data.user.name + "\'s To-do list";
+				this.$('.app_title').text(app_name);
 				if (data.user.user_fields.to_do_list_field === null) {
 					this.to_do_object = {"preferences": {"max_items": 5, "current_id": 2 }, "tasks": [{"id": 1, "title": "New Task", "description": "Some Description", "due_date": "February 14, 2015", "notes": "Some notes regarding this new task and stuff..."} ], "contexts": [{"id": 4, "name": "Work", "color": "#E31B1B"}, {"id": 5, "name": "Personal", "color": "#53D442"} ] };
 					this.ajax('updateFieldData', user_id, JSON.stringify(this.to_do_object));
@@ -62,8 +65,11 @@
 		},
 
 		loadAppView: function() {
+			var num_tasks = this.to_do_object.tasks.length;
+			var display_string = (num_tasks > 0) ? "" : "There are no tasks. Click \"+ New Task\" to add one.";
 			this.switchTo('app_index', {
-				tasks: this.to_do_object.tasks
+				tasks: this.to_do_object.tasks,
+				string_data: display_string
 			});
 		},
 

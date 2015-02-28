@@ -1,10 +1,11 @@
 <div id="app_index">
 	<div id="options_bar">
 		<button id="edit_settings">Settings</button>
-		<button id="add_task">+</button>
+		<button id="add_task">+ New Task</button>
 		<span class="clearfix"></span>
 	</div>
 	<div id="task_pane">
+	<p>{{string_data}}</p>
 	<ul id="task_list">
 		{{#tasks}}
 		<li>
@@ -18,7 +19,5 @@
 		{{/tasks}}
 	</ul>
 	</div>
-	<pre>
-		<!--{{string_data}}-->
-	</pre>
+	
 </div>
