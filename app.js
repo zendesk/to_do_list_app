@@ -66,7 +66,7 @@
 
 		loadAppView: function() {
 			var num_tasks = this.to_do_object.tasks.length;
-			var display_string = (num_tasks > 0) ? "" : "There are no tasks. Click \"+ New Task\" to add one.";
+			var display_string = (num_tasks > 0) ? "" : "No tasks here. Click \"+ New Task\" to add one.";
 			this.switchTo('app_index', {
 				tasks: this.to_do_object.tasks,
 				string_data: display_string
