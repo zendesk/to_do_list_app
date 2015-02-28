@@ -20,6 +20,7 @@ ul#task_list {
 
 ul#task_list li {
 	position: relative;
+	margin-top: 5px;
 }
 
 ul li:not(:last-child){
