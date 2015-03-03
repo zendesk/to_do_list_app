@@ -1,10 +1,11 @@
 <div id="app_index">
 	<div id="options_bar">
-		<button id="edit_settings">Settings</button>
-		<button id="add_task">+</button>
+		<button class="btn" id="edit_settings">Settings</button>
+		<button class="btn" id="add_task">+</button>
 		<span class="clearfix"></span>
 	</div>
 	<div id="task_pane">
+	<p>{{string_data}}</p>
 	<ul id="task_list">
 		{{#tasks}}
 		<li>
@@ -12,13 +13,11 @@
 			Due Date: {{this.due_date}}<br/>
 			Title: {{this.title}}<br/>
 			Description: {{this.description}} 
-			<span class="btn_wrapper"><button class="note_btn">Notes</button>
+			<span class="btn_wrapper"><button class="note_btn btn" style="height: 60%;">Notes</button>
 			<span class="notes" style="display:none">{{this.notes}} - {{this.context_id}}</span></span>
 		</li>
 		{{/tasks}}
 	</ul>
 	</div>
-	<pre>
-		<!--{{string_data}}-->
-	</pre>
+	
 </div>
