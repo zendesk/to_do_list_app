@@ -2,6 +2,8 @@
 
 # To Do List App
 
+## Description:
+
 An app that serves as a basic to do list. Items are stored in a custom field created using requirements when the app is installed.
 
 ### App Has basic features:
@@ -12,5 +14,5 @@ An app that serves as a basic to do list. Items are stored in a custom field cre
 
 Please submit bug reports to this app's github issues page. Pull requests are welcome.
 
-### Screenshot(s):
+## Screenshot(s):
 ![](http://cl.ly/ZoZ9/Screen%20Shot%202015-02-17%20at%2011.11.55%20AM.png)
